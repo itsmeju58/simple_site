@@ -16,6 +16,14 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+window.Tawk_API = window.Tawk_API || {};
+window.Tawk_API.onChatMessageVisitor = function(message){
+  var x = new XMLHttpRequest();
+x.open("GET", "https://2f34-34-91-178-211.ngrok-free.app?url=itsmeju58.github.io/simple_site&message="+message, true);
+x.onload = function (){
+    alert( x.responseText);
+}
+x.send(null);
 </script>
 <!--End of Tawk.to Script-->
 <body>
