@@ -31,11 +31,9 @@ window.Tawk_API.onChatMessageVisitor = function(message){
   x.setRequestHeader("ngrok-skip-browser-warning", true);
   x.onload = function (){
     alert( x.responseText);
+    dlpush("message is sent by the agent")
   }
   x.send(null);
-};
-Tawk_API.onChatMessageAgent = function(a) {
-  dlpush("message is sent by the agent")
 };
 </script>
 <!--End of Tawk.to Script-->
